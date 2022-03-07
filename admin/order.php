@@ -62,7 +62,7 @@ $sql_purchase = $pdo->prepare( $sql );
 ?>
         <td><a href="order_detail.php?id=<?=$row_detail['purchase_id']?>""> <?=$row_detail['purchase_id']?> </a></td>
         <td> <?=$row_detail['name']?> </td>
-        <td><?=$row_detail['gokei']?> </td>
+        <td><?=number_format($row_detail['gokei'])?> </td>
         <td><?=$row_detail['date']?> </td>
       </tr>
 

@@ -4,4 +4,5 @@
   <li><a href="delete-input.php">商品削除</a></li>
   <li><a href="edit.php">更新削除</a></li>
   <li><a href="order.php">注文履歴</a></li>
+  <li><a href="shuke.php">商品ごと</a></li>
 </ul>

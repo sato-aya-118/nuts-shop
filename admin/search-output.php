@@ -11,20 +11,15 @@
 </tr>
 
 <?php
-
-//$pdo=new PDO('mysql:host=localhost;dbname=sato_aya_shop;charset=utf8','sato_aya','Asdf3333-');
-
-$sql=$pdo->prepare('select * from product where name=?');
+$sql=$pdo->prepare('SELECT * FROM product WHERE id=?');
 $sql->execute([$_REQUEST['keyword']]);
 foreach ($sql as $row) {
   ?>
-
   <tr>
   <td> <?=$row['id']?> </td>
   <td> <?=$row['name']?> </td>
   <td> <?=$row['price']?> </td>
   </tr>
-
  <?php 
 }
 ?>
